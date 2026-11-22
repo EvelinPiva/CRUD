@@ -1,0 +1,43 @@
+### cadastrar funcionário
+
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+    "nome": "ana",
+    "email":"ana@gmail.com",
+    "senha":"abc"
+}
+
+### cadastrar obra
+
+POST http://localhost:3000/obra
+Content-Type: application/json
+
+{
+    "codIdentificacao": 1,
+    "nome":"joao",
+    "cnpj":"ab"
+}
+### cadastrar material
+
+POST http://localhost:3000/material
+Content-Type: application/json
+
+{
+    "idObra": 1,
+    "descricao":"abc",
+    "quantidade":"gh",
+    "codLote": "aaa"
+}
+
+### cadastrar movimento
+POST http://localhost:3000/movimento
+Content-Type: application/json
+
+{
+    "idMaterial":1,
+    "tipo":"ENTRADA",
+    "quantidadeMov": "a",
+    "data":"2026-09-24"
+}
